@@ -14,6 +14,7 @@ EAN (ean int primary key, tovar text, cat_id int references Category, brand_id i
 
 
 Для создания скачать uhtt_barcode_ref_all.7z, распаковать CSV в папку, затем запускать
+
 run.cmd <папка>
 
 PS Предварительно установить .Net core https://dotnet.microsoft.com/download/dotnet-core/current/runtime
