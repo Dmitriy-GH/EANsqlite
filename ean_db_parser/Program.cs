@@ -159,7 +159,7 @@ namespace ean_db_parser {
             Stopwatch sw = Stopwatch.StartNew();
             var path = args[0];
             var ep = new EanParser();
-            ep.CreateDB($"{path}\\ean.db");
+            ep.CreateDB($"{path}/ean.db");
             foreach(var f in Directory.GetFiles(path, "*.csv")) ep.ParseCSV(f);
             Console.WriteLine($"Время: {sw.ElapsedMilliseconds / 1000}.{(sw.ElapsedMilliseconds % 1000) / 100:D1} сек.");
             ep.CreateIndexes();
